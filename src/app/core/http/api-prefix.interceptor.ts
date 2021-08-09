@@ -18,7 +18,6 @@ export class ApiPrefixInterceptor implements HttpInterceptor {
    * Intercepts a Http request and prefixes it with `environment.serverUrl`.
    */
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    
     /**
      * Ignore URLs that are complete for i18n
      */

@@ -74,7 +74,7 @@ export class I18nService {
     }
 
     log.debug(`Language set to ${language}`);
-    localStorage.setItem(this.languageStorageKey, language)
+    localStorage.setItem(this.languageStorageKey, language);
     this.translateService.setDefaultLang(language);
   }
 
